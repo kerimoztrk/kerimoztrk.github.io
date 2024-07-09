@@ -1,0 +1,76 @@
+body {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    margin: 0;
+    background: linear-gradient(90deg, #ff6b6b, #f06595); /* Sayfa arka planı için pembe tonlu geçiş */
+    background-size: 400% 400%;
+    animation: gradientAnimation 10s ease infinite;
+}
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.navbar {
+    background: linear-gradient(90deg, #3498db, #9b59b6); /* Navbar arka planı için mavi tonlu geçiş */
+    transition: background 0.3s ease-in-out;
+}
+
+.navbar-brand {
+    font-weight: bold;
+    color: #fff !important; /* Navbar marka metin rengi */
+}
+
+.navbar-nav .nav-link {
+    color: #fff !important; /* Navbar link metin rengi */
+    transition: color 0.3s ease-in-out;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #ffdd59 !important; /* Navbar link hover rengi */
+}
+
+.hero {
+    background: rgba(255, 255, 255, 0.9); /* Hero alanı arka plan rengi (saydam beyaz) */
+    height: 100vh;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.hero img {
+    border: 5px solid rgba(244, 244, 249, 0.8); /* Hero alanı resim kenar rengi */
+}
+
+.hero h1 {
+    color: #3498db; /* Hero alanı başlık rengi */
+}
+
+footer {
+    background: rgba(255, 255, 255, 0.8); /* Footer arka plan rengi (saydam beyaz) */
+    border-top: 1px solid #ddd;
+    padding: 20px;
+    text-align: center;
+    color: #333;
+}
+
+.btn-outline-dark {
+    border-color: #3498db;
+    color: #3498db;
+    transition: all 0.3s ease-in-out;
+}
+
+.btn-outline-dark:hover {
+    background-color: #3498db;
+    color: #fff;
+}
